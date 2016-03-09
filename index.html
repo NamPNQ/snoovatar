@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Snoovatar</title>
+    <link rel="stylesheet" type="text/css" href="//www.redditstatic.com/reddit.css">
+    <link rel="stylesheet" type="text/css" href="//www.redditstatic.com/gold.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="/static/js/reddit/reddit.js"></script>
+    <script type="text/javascript" src="/static/js/lib/paper-core.js"></script>
+    <script type="text/javascript" src="/static/js/snoovatar/snoovatar.js"></script>
+    <script type="text/javascript">
+    r.snoovatar.initSnoovatar({
+        "snoo_color": "#ffffff",
+        "public": true,
+        "components": {
+            "snoo-body": {
+                "color": "#ffffff",
+                "dressingName": "body"
+            },
+            "grippables": {
+                "dressingName": "champagne"
+            },
+            "hats": {
+                "dressingName": "top-hat"
+            },
+            "tops": {
+                "dressingName": "tux"
+            },
+            "flipped_grippables": {
+                "dressingName": "dog"
+            },
+            "bottoms": {
+                "dressingName": "striped-pants"
+            },
+            "glasses": {
+                "dressingName": "monocle"
+            },
+            "snoo-head": {
+                "dressingName": "head"
+            }
+        }
+    })
+    </script>
+</head>
+
+<body>
+    <div class="snoovatar-page js-snoovatar-page">
+        <div class="container">
+            <div class="arrow-container left">
+                <div id="prevButton" class="arrow left">
+                    <img src="//www.redditstatic.com/snoovatar/icons/arrow.svg">
+                </div>
+                <div id="random" class="button">
+                    <div class="icon"></div>
+                </div>
+            </div>
+            <div id="snoovatar" class="editable">
+                <div class="shadow"></div>
+            </div>
+            <div class="arrow-container right">
+                <div id="nextButton" class="arrow right">
+                    <img src="//www.redditstatic.com/snoovatar/icons/arrow.svg">
+                </div>
+                <div id="clear" class="button">
+                    <div class="icon"></div>
+                </div>
+            </div>
+            <div class="selectors">
+                <ul></ul>
+            </div>
+            <footer>
+                <div class="inputs">
+                    <label class="snoo-color-label js-snoo-color-label">
+                        <input id="color" type="color" value="#FFFFFF">
+                        <span class="label">Main color</span>
+                    </label>
+                    <label class="snoo-color-label js-snoo-color-label is-hidden">
+                        <input id="alt_color" type="color" value="#FFFFFF">
+                        <span class="label">Alt color</span>
+                    </label>
+                </div>
+                <div class="buttons">
+                    <a id="download" target="_blank" href="#" download="snoovatar.png" class="button button-big">Download</a>
+                </div>
+                <div id="message" class="message" style="display: none;"></div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
